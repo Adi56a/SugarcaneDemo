@@ -92,7 +92,7 @@ const FarmerBillingPage = () => {
       const token = localStorage.getItem('authToken');
       const baseUrl = process.env.NODE_ENV === 'development' 
         ? 'http://localhost:5000/api/bill/total-sugarcane-weight' 
-        : 'https://sugarcanebillingsoftware.onrender.com/api/bill/total-sugarcane-weight';
+        : 'https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws/api/bill/total-sugarcane-weight';
 
       const response = await fetch(baseUrl, {
         headers: {
@@ -116,7 +116,7 @@ const FarmerBillingPage = () => {
 
       const baseUrl = process.env.NODE_ENV === 'development' 
         ? 'http://localhost:5000/api/farmer/all' 
-        : 'https://sugarcanebillingsoftware.onrender.com/api/farmer/all';
+        : 'https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws/api/farmer/all';
 
       const response = await fetch(baseUrl, {
         headers: {
@@ -298,7 +298,7 @@ const FarmerBillingPage = () => {
   try {
     const baseUrl = process.env.NODE_ENV === 'development' 
       ? 'http://localhost:5000/api/bill/create' 
-      : 'https://sugarcanebillingsoftware.onrender.com/api/bill/create';
+      : 'https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws/api/bill/create';
 
     const response = await fetch(baseUrl, {
       method: 'POST',

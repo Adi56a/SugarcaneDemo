@@ -87,7 +87,7 @@ const SellerBillCreation = () => {
 
       const baseUrl = process.env.NODE_ENV === 'development' 
         ? 'http://localhost:5000/api/seller/all' 
-        : 'https://sugarcanebillingsoftware.onrender.com/api/seller/all';
+        : 'https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws/api/seller/all';
 
       const response = await fetch(baseUrl, {
         headers: {
@@ -202,7 +202,7 @@ const SellerBillCreation = () => {
 
       const baseUrl = process.env.NODE_ENV === 'development' 
         ? 'http://localhost:5000/api/sellerbill/create-bill' 
-        : 'https://sugarcanebillingsoftware.onrender.com/api/sellerbill/create-bill';
+        : 'https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws/api/sellerbill/create-bill';
 
       const response = await fetch(baseUrl, {
         method: 'POST',

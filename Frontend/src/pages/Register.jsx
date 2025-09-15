@@ -26,7 +26,7 @@ const Register = () => {
     // Dynamically set the URL based on the environment
     const baseUrl = process.env.NODE_ENV === 'development' 
       ? 'http://localhost:5000/api/admin/register' 
-      : 'https://sugarcanebillingsoftware.onrender.com/api/admin/register'; // Replace with your actual production URL
+      : 'https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws/api/admin/register'; // Replace with your actual production URL
 
     const response = await fetch(baseUrl, {
       method: 'POST',

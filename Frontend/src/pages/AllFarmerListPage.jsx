@@ -33,7 +33,7 @@ const AllFarmerListPage = () => {
       
       const baseUrl = process.env.NODE_ENV === 'development' 
         ? 'http://localhost:5000/api/farmer/all' 
-        : 'https://sugarcanebillingsoftware.onrender.com/api/farmer/all';
+        : 'https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws/api/farmer/all';
 
       const response = await fetch(baseUrl, {
         headers: {
@@ -128,7 +128,7 @@ const AllFarmerListPage = () => {
       const token = localStorage.getItem('authToken');
     const baseUrl = process.env.NODE_ENV === 'development' 
   ? `http://localhost:5000/api/farmer/delete/${farmerId}` 
-  : `https://sugarcanebillingsoftware.onrender.com/api/farmer/delete/${farmerId}`;
+  : `https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws/api/farmer/delete/${farmerId}`;
 
       const response = await fetch(baseUrl, {
         method: 'DELETE',
@@ -166,7 +166,7 @@ const AllFarmerListPage = () => {
       const token = localStorage.getItem('authToken');
       const baseUrl = process.env.NODE_ENV === 'development' 
         ? 'http://localhost:5000/api/farmer/bulk-delete' 
-        : 'https://sugarcanebillingsoftware.onrender.com/api/farmer/bulk-delete';
+        : 'https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws/api/farmer/bulk-delete';
 
       const response = await fetch(baseUrl, {
         method: 'DELETE',

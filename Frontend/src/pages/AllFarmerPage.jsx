@@ -48,7 +48,7 @@ const AllFarmerPage = () => {
     // Check the environment and set the appropriate URL
     const baseUrl = process.env.NODE_ENV === 'development' 
       ? 'http://localhost:5000/api/farmer/all' 
-      : 'https://sugarcanebillingsoftware.onrender.com/api/farmer/all'; // Replace with your production URL
+      : 'https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws/api/farmer/all'; // Replace with your production URL
 
     const response = await fetch(baseUrl, {
       headers: {
@@ -196,7 +196,7 @@ const AllFarmerPage = () => {
     // Check the environment and set the appropriate URL
     const baseUrl = process.env.NODE_ENV === 'development' 
       ? `http://localhost:5000/api/farmer/${selectedFarmerId}` 
-      : `https://sugarcanebillingsoftware.onrender.com/api/farmer/${selectedFarmerId}`; // Replace with your production URL
+      : `https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws/api/farmer/${selectedFarmerId}`; // Replace with your production URL
 
     const response = await fetch(baseUrl, {
       headers: {
@@ -336,7 +336,7 @@ const AllFarmerPage = () => {
       // Check the environment and set the appropriate URL
       const baseUrl = process.env.NODE_ENV === 'development' 
         ? 'http://localhost:5000/api/upload' 
-        : 'https://sugarcanebillingsoftware.onrender.com/api/upload'; // Replace with the production URL
+        : 'https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws/api/upload'; // Replace with the production URL
 
       const response = await fetch(baseUrl, {
         method: 'POST',
@@ -479,7 +479,7 @@ Thank you for your business! 🙏`;
     // Check the environment and set the appropriate URL
     const baseUrl = process.env.NODE_ENV === 'development' 
       ? 'http://localhost:5000/api/bill/delete' 
-      : 'https://sugarcanebillingsoftware.onrender.com/api/bill/delete'; // Replace with your production URL
+      : 'https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws/api/bill/delete'; // Replace with your production URL
 
     const response = await fetch(`${baseUrl}/${billId}`, {
       method: 'DELETE',

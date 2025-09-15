@@ -40,7 +40,7 @@ const UpdateSellerPage = () => {
 
   const apiBase = process.env.NODE_ENV === 'development'
     ? 'http://localhost:5000'
-    : 'https://sugarcanebillingsoftware.onrender.com';
+    : 'https://o52eguwxr47vsj425dq4leipby0kggba.lambda-url.ap-south-1.on.aws';
 
   useEffect(() => {
     const fetchSellers = async () => {
