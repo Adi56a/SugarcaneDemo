@@ -2,9 +2,9 @@ import React from 'react';
 
 const translations = {
   en: {
-    companyName: "Growaro Infotech",
+    companyName: "Varad Gaggery Factory",
     address: "Wadgaw Rasai, District Pune, pin - 412211",
-    contact: "Contact: Dhwale Brothers +91 70289 56076",
+    contact: "Contact:   +91 70289 56076",
     title: "Buying Bill Sugarcane Weight Bill",
     date: "Date",
     farmerName: "Farmer Name",
@@ -31,7 +31,7 @@ const translations = {
     currency: "₹"
   },
   mr: {
-    companyName: "ढवळे गुळ उद्योग समूह",
+    companyName: "वारद गुळ उद्योग",
     address: "वडगाव रासाई, जिल्हा पुणे, पिन - ४१२२११",
     contact: "संपर्क: धवले भानुदु +९१ ७०२८९ ५६०७६",
     title: "खरेदी बिल शेतकरी ऊस वजन बिल",
@@ -80,7 +80,7 @@ const FarmerBuyingBill = ({
   const t = translations[language];
   const second_cloumn = weightData?.second_cloumn || t.second_cloumn;
   const thrid_column = weightData?.thrid_column || t.thrid_column;
-  const logoSrc = "/bill_logo.jpg";
+  const logoSrc = "/logo5.png";
 
   return (
     <div
