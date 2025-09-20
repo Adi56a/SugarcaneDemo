@@ -34,7 +34,7 @@ const Home = () => {
 
   const translations = {
     en: {
-      welcome: 'Growaro Infotech',
+      welcome: 'Varad Gaggery factory',
       subtitle: 'Streamline your billing and farmer management processes',
       selectOption: 'Choose Your Action',
       
@@ -70,7 +70,7 @@ const Home = () => {
       quickActions: 'Quick Actions'
     },
     mr: {
-      welcome: 'G7 Sugar Limited',
+      welcome: 'वारद गुळ कारखाना',
       subtitle: 'आपले बिलिंग आणि शेतकरी व्यवस्थापन प्रक्रिया सुव्यवस्थित करा',
       selectOption: 'आपली कृती निवडा',
       
