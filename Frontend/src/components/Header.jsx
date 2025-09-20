@@ -32,7 +32,7 @@ const Header = () => {
 
   const translations = {
     en: {
-      brandName: "Growaro Infotech",
+      brandName: "Varda SugarCane",
       home: "Home",
       
       // Farmer Section
