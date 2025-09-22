@@ -56,7 +56,7 @@ const Header = () => {
       profile: "Profile"
     },
     mr: {
-      brandName: "ढवळे गुळ उद्योग समूह",
+      brandName: "वरद गुळ उद्योग",
       home: "होम",
       
       // Farmer Section
