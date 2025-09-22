@@ -70,7 +70,7 @@ const Home = () => {
       quickActions: 'Quick Actions'
     },
     mr: {
-      welcome: 'वारद गुळ कारखाना',
+      welcome: 'वरद गुळ कारखाना',
       subtitle: 'आपले बिलिंग आणि शेतकरी व्यवस्थापन प्रक्रिया सुव्यवस्थित करा',
       selectOption: 'आपली कृती निवडा',
       
