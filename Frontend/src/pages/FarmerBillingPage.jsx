@@ -62,10 +62,11 @@ const FarmerBillingPage = () => {
     const givenMoney = parseFloat(formData.given_money) || 0;
 
     // Calculate gross sugarcane weight
-    const grossSugarcaneWeight = filledWeight - emptyWeight;
-    
-    // Auto-calculate binding material as 10% of gross sugarcane weight
-    const autoBindingMaterial = grossSugarcaneWeight > 0 ? grossSugarcaneWeight * 0.1 : 0;
+const grossSugarcaneWeight = filledWeight - emptyWeight;
+
+// Auto-calculate binding material as 1% of gross sugarcane weight
+const autoBindingMaterial = grossSugarcaneWeight > 0 ? grossSugarcaneWeight * 0.01 : 0;
+
     
     // Calculate net sugarcane weight
     const netSugarcaneWeight = grossSugarcaneWeight - autoBindingMaterial;
@@ -540,7 +541,7 @@ const FarmerBillingPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm">
             <div className="bg-orange-50 p-4 rounded-lg border border-orange-200">
               <div className="font-semibold text-orange-800 mb-1">Binding Material</div>
-              <div className="text-orange-700">10% of (Filled - Empty) Weight</div>
+              <div className="text-orange-700">1% of (Filled - Empty) Weight</div>
             </div>
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
               <div className="font-semibold text-blue-800 mb-1">Net Weight Calculation</div>
