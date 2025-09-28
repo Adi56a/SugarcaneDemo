@@ -1,14 +1,17 @@
-FROM node:22 
+FROM node:22
 
-WORKDIR  /home/ubuntu/Backend
+WORKDIR /Backend
+
+COPY Backend/package*.json ./
 
 RUN npm install 
 
+COPY Backend/ .
+
 ENV MONGO_URI=value
 ENV JWT_SECRET=value
-ENV PORT=3000
+ENV PORT=5000
 
+EXPOSE 5000
 
-EXPOSE 3000
-
-CMD ["npm", "index.js"]
+CMD ['node' , 'index.js']
