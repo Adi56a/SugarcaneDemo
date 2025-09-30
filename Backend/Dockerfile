@@ -2,7 +2,7 @@
 FROM node:16
 
 # Set the working directory inside the container
-WORKDIR /usr/src/app
+WORKDIR /home/ec2-user/app
 
 # Copy package.json and package-lock.json (if they exist) to install dependencies
 COPY package*.json ./
