@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  # Node.js App Service
+  node:
+    build: .  # Builds the Node.js Docker image using the Dockerfile in the current directory
+    ports:
+      - "5000:5000"  # Expose port 5000 on the host and map it to port 5000 inside the container
+    environment:
+      - MONGO_URI=${MONGO_URI} # MongoDB connection URI
+      - JWT_SECRET=${JWT_SECRET}  # Secret for JWT (for example purposes)
+    depends_on:
+      - mongodb  # Ensures MongoDB starts before the Node.js app
+
+  # MongoDB Service
+  mongodb:
+    image: mongo  # Use the official MongoDB image from Docker Hub
+    volumes:
+      - mongodb_data:/data/db  # Persist MongoDB data in a Docker volume
+    ports:
+      - "27017:27017"  # Expose MongoDB on port 27017
+
+# Named volumes to persist data
+volumes:
+  mongodb_data:
